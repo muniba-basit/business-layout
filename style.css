@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+:root {
+        --main-bg: #fdfaf6;        /* Creamy main background */
+        --primary: #d61f69;        /* Magenta as brand color */
+        --accent: #009688;         /* Teal as secondary accent */
+        --accent-dark: #00675b;    /* Dark teal for hover states */
+        --text-dark: #2b2b2b;      /* Dark grey text */
+        --footer-bg: #1a1a1a;      /* Dark footer background */
+        --card-bg: #ffffff;        /* Card background (white) */
+        --light-bg: #f3f0eb;       /* Light grey/cream section bg */
+      }
+      
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif; 
+    background-color:var(--main-bg)
+    color:var(--text-dark);
+    line-height:1.6;
+}
+
+a{
+    text-decoration: none   ;
+    color:inherit;
+
+}
+
+img{
+    max-width: 100%;
+    display:block;
+
+}
+
+h2{
+    font-size:2rem;
+
+}
+/* header style */
+
+header{
+    background-color: var(--primary);
+    color:#fff;
+    padding: 1rem 2rem;
+    position:sticky;
+    top:0;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size:1.6rem;
+    color:var(--accent);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:1.5rem;
+
+}
+
+nav ul li a:hover{
+color:var(--accent);
+}
+
+/* HERO SECTION */
+.hero{
+    background-image:linear-gradient(rgb(228, 110, 228,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDLfkdL2aPmkfCpayHqyutsw1JHe7jK7ldw&s);
+    background-size: cover;
+    background-position: center;
+    height:60vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color:#fff;
+    text-align: center;
+    padding:4rem 2rem;
+
+}
+
+.hero h1{
+    font-size: 5rem;
+    margin-bottom: 1 rem;
+}
+
+.hero p{
+    font-size: 2rem;
+    max-width:600px;
+    margin:0 auto;
+    padding:0.1rem;
+    
+}
+
+.hero button{
+    background-color: var(--accent);
+    color:var(--primary);
+    border:none;
+    padding:1 rem  2rem;
+    width: 8rem;
+    height:2rem;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.hero button:hover{
+    background-color: var(--accent-dark);
+    color:#fff;
+}
+
+
+/* about */
+
+.about{
+    display:flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 4 rem, 2 rem;
+    width:1200px;
+    margin:auto;
+
+}
+
+.about img{
+ width:50%;
+ margin-right: 2rem;
+
+}
+
+.about text{
+   max-width:40%;
+    padding:2rem;
+
+}
+
+/* services */
+
+.services{
+    background-color: var(--light-bg);
+    padding:4rem 2rem;
+    text-align: center;
+}
+
+.services-cards{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.cards{
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding:2 rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align:center;
+    width:300px;
+    transition:transform 0.3s ease;
+}
+
+.cards:hover{
+    transform:translateY(-10px);
+}
